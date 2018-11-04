@@ -1,0 +1,40 @@
+{
+  "name": "heyU",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "bundle": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
+    "debug": "cd android && gradlew assembleDebug",
+    "release": "cd android && gradlew assembleRelease",
+    "clean": "cd android && gradlew clean",
+    "test": "jest"
+  },
+  "dependencies": {
+    "native-base": "^2.6.1",
+    "react": "16.3.1",
+    "react-native": "0.55.4",
+    "react-native-camera": "git+https://git@github.com/react-native-community/react-native-camera",
+    "react-native-fbsdk": "^0.8.0",
+    "react-native-firebase": "^5.0.0",
+    "react-native-google-signin": "^1.0.0-rc8",
+    "react-native-linear-gradient": "^2.4.3",
+    "react-native-push-notification": "^3.1.2",
+    "react-native-vector-icons": "^6.0.2",
+    "react-navigation": "^2.18.2",
+    "vue-native-core": "0.0.8",
+    "vue-native-helper": "0.0.9",
+    "vue-native-router": "0.0.1-alpha.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "babel-preset-react-native": "4.0.1",
+    "jest": "23.6.0",
+    "react-test-renderer": "16.3.1",
+    "vue-native-scripts": "0.0.14"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
